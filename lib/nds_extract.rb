@@ -88,7 +88,7 @@ def movies_with_directors_set(source)
   while index<source.length do
     arrays.push(movies_with_director_key(source[index][:name], source[index][:movies]))
   end
-  
+  return arrays
 end
 
 # ----------------    End of Your Code Region --------------------
