@@ -86,7 +86,7 @@ def movies_with_directors_set(source)
   arrays = []
   index = 0
   while index<source.length do
-    arrays.push()
+    arrays.push(movies_with_director_key(source[index][:name], source[index][:movies]))
   end
   
 end
