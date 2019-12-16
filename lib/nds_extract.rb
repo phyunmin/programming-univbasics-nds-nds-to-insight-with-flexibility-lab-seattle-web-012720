@@ -76,7 +76,9 @@ pp collection[0][:worldwide_gross]
   result = {}
   index = 0
   while index <collection.length do
-    result[collection[index][:studio]]+=collection[index][:worldwide_gross]
+    studio = collection[index][:studio]
+    gross = collection[index][:worldwide_gross]
+    result[studio]+= gross
     index+=1
   end
   return result
